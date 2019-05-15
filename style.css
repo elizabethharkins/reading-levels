@@ -1,0 +1,126 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #5D6063;
+    background-color: #EAEDF0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+    text-align: center;
+    margin-top: 5em;
+    padding: 5em;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#tagline {
+    font-size: 1.1em;
+    width: 66%;
+}
+
+.submissions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 50px;
+}
+
+.formulate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#userinput {
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 25px;
+    padding: 6px;
+}
+
+#userinput::placeholder {
+    color: purple;
+}
+
+.button-container {
+    padding: 20px;
+}
+
+#enter {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
+    outline-style: none;
+    font-size: 1.1em;
+    padding: 6px;
+}
+
+.books {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+
+.books ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+/* ---------- TABLET ---------- */
+
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 1em;
+    }
+
+    .container {
+        margin: 6.5em;
+        padding: 3em;
+    }
+}
+
+@media only screen and (min-width: 239px) and (max-width: 479px) {
+
+    body {
+        font-size: 1em;
+    }
+
+    .container {
+        font-size: 0.7em;
+        margin: 7em;
+        padding: 3em;
+    }
+}

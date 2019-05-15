@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+      	<h1>That Reading Level Thing</h1>
+      	<p id="tagline">Enter your learner's reading level and say hello to titles
+        that will pave the path to success!</p>
+      <div class="submissions">
+          <div class="formulate">
+            <label for="userinput">My child's current reading level is:</label>
+          	<input id="userinput" type="text" placeholder="I &#9829; literacy!">
+          </div>
+          <div class="button-container">
+          	<button id="enter">Get Leveled Info</button>
+          </div>
+      </div>
+      <div class="books">
+      	<ul>
+      		<li id="example"></li>
+      	</ul>
+      </div>
+    </div>
+	<script>
+
+  function levelMe(){
+      var choice1 = 'https://www.booksource.com/SearchResults.aspx?q=whereUsed:cat-3ddd5c15-f821-4d62-84cf-86161e6e296e';
+      var entry = document.getElementById('userinput').value;
+      var result1 = entry.match(/a/ig);
+
+      if(result1){
+        window.location.href = 'https://www.booksource.com/SearchResults.aspx?q=whereUsed:cat-3ddd5c15-f821-4d62-84cf-86161e6e296e';
+      }
+  }
+
+  document.getElementById('enter').onclick = levelMe;
+
+  </script>
+</body>
+</html>

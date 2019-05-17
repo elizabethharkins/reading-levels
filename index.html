@@ -26,13 +26,29 @@
 	<script>
 
   function levelMe(){
-      var choice1 = 'https://www.booksource.com/SearchResults.aspx?q=whereUsed:cat-3ddd5c15-f821-4d62-84cf-86161e6e296e';
-      var entry = document.getElementById('userinput').value;
-      var result1 = entry.match(/a/ig);
+      const levelA = 'https://www.booksource.com/SearchResults.aspx?q=whereUsed:cat-3ddd5c15-f821-4d62-84cf-86161e6e296e';
+			const levelB = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-b-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D6E3A96864686BE4A-7C4B1C738E7291AA%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558126806';
+			const levelC = 'https://shop.scholastic.com/parent-ecommerce/books/first-little-readers-parent-pack-guided-reading-level-c-9780545231510.html?intid=9780545231510-pos2';
+			const levelD = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-d-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D4CC692B9CE56AE61-3A2BE9C7916C1201%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558128377';
+      const entry = document.getElementById('userinput').value;
+      const resultA = entry.match(/a/ig) || entry.match(/levela/ig);
+			const resultB = entry.match(/b/ig) || entry.match(/levelb/ig);
+			const resultC = entry.match(/c/ig) || entry.match(/levelc/ig);
+			const resultD = entry.match(/d/ig) || entry.match(/leveld/ig);
 
-      if(result1){
-        window.location.href = 'https://www.booksource.com/SearchResults.aspx?q=whereUsed:cat-3ddd5c15-f821-4d62-84cf-86161e6e296e';
+      if(resultA){
+        window.location.href = levelA;
       }
+			else if(resultB){
+				window.location.href = levelB;
+			}
+			else if(resultC){
+				window.location.href = levelC;
+			}
+			else if(resultD){
+				window.location.href = levelD;
+			}
+			else(alert('Visit your local public library for inpiration!'))
   }
 
   document.getElementById('enter').onclick = levelMe;

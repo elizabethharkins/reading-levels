@@ -81,6 +81,8 @@ body {
 }
 
 #enter {
+    background: #fff;
+    border-style: hidden;
     border-bottom: 2.5px solid orange;
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);

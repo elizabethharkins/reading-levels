@@ -1,66 +1,102 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-	<title>Reading List</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Reading Levels</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
     <div class="container">
-      	<h1>That Reading Level Thing</h1>
-      	<p id="tagline">Enter your learner's reading level and say hello to titles
+        <h1>That Reading Level Thing</h1>
+        <p id="tagline">Enter your learner's reading level and say hello to titles
         that will pave the path to success!</p>
       <div class="submissions">
           <div class="formulate">
             <label for="userinput">My child's current reading level is:</label>
-          	<input id="userinput" type="text" placeholder="I &#9829; literacy!">
+            <input id="userinput" type="text" placeholder="I &#9829; literacy!">
           </div>
           <div class="button-container">
-          	<button id="enter">Go</button>
+            <button id="enter">Go</button>
           </div>
       </div>
       <div class="disclaimer">
-      		<p id="note">Remember, a reading level is a guide, not a ruling.</p>
+          <p id="note">Remember, a reading level is a guide, not a ruling.</p>
           <p>Relax + enjoy :)</p>
       </div>
     </div>
-	<script>
+  <script>
 
-	function levelMe(){
+  function levelMe(){
 
-      const levelA = 'https://www.booksource.com/SearchResults.aspx?q=whereUsed:cat-3ddd5c15-f821-4d62-84cf-86161e6e296e';
-			const levelB = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-b-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D6E3A96864686BE4A-7C4B1C738E7291AA%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558126806';
-			const levelC = 'https://shop.scholastic.com/parent-ecommerce/books/first-little-readers-parent-pack-guided-reading-level-c-9780545231510.html?intid=9780545231510-pos2';
-			const levelD = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-d-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D4CC692B9CE56AE61-3A2BE9C7916C1201%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558128377';
-			const anyLevel = 'https://www.scholastic.com/teachers/collections/17-18/guided-reading-book-lists-by-level/';
+      const levelAA = 'https://bobbooks.com/';
+      const levelA = 'https://bobbooks.com/';
+      const levelB = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-b-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D6E3A96864686BE4A-7C4B1C738E7291AA%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558126806';
+      const levelC = 'https://shop.scholastic.com/parent-ecommerce/books/first-little-readers-parent-pack-guided-reading-level-c-9780545231510.html?intid=9780545231510-pos2';
+      const levelD = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-d-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D4CC692B9CE56AE61-3A2BE9C7916C1201%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558128377';
+      const anyLevel = 'https://www.scholastic.com/teachers/collections/17-18/guided-reading-book-lists-by-level/';
 
-			const entry = document.getElementById('userinput').value;
+      const entry = document.getElementById('userinput').value;
 
-			const resultA = entry.match(/a/ig) || entry.match(/levela/ig);
-			const resultB = entry.match(/b/ig) || entry.match(/levelb/ig);
-			const resultC = entry.match(/c/ig) || entry.match(/levelc/ig);
-			const resultD = entry.match(/d/ig) || entry.match(/leveld/ig);
+      const resultAA = entry.match(/aa/ig) || entry.match(/levelaa/ig);
+      const resultA = entry.match(/a/ig) || entry.match(/levela/ig);
+      const resultB = entry.match(/b/ig) || entry.match(/levelb/ig);
+      const resultC = entry.match(/c/ig) || entry.match(/levelc/ig);
+      const resultD = entry.match(/d/ig) || entry.match(/leveld/ig);
 
-	      if(resultA){
-	        window.location.href = levelA;
-	      }
-				else if(resultB){
-					window.location.href = levelB;
-				}
-				else if(resultC){
-					window.location.href = levelC;
-				}
-				else if(resultD){
-					window.location.href = levelD;
-				}
-				else{
-					window.location.href = anyLevel;
-				}
+        if(resultAA){
+          window.location.href = levelAA;
+        }
+        else if(resultA){
+          window.location.href = levelA;
+        }
+        else if(resultB){
+          window.location.href = levelB;
+        }
+        else if(resultC){
+          window.location.href = levelC;
+        }
+        else if(resultD){
+          window.location.href = levelD;
+        }
+        else{
+          window.location.href = anyLevel;
+        }
+    }
 
-  	}
-
-	document.getElementById('enter').onclick = levelMe;
-
+  document.getElementById('enter').onclick = levelMe;
 
   </script>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
+
 </html>

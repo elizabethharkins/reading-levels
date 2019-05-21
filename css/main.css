@@ -164,6 +164,10 @@ textarea {
        flex-flow: column wrap;
    }
 
+   label span {
+      font-style: italic;
+   }
+
    #userinput {
        border-radius: 8px;
        border-style: hidden;
@@ -193,6 +197,7 @@ textarea {
        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
        outline-style: none;
        font-size: 1.1em;
+       /*margin: 10px;*/
        padding: 6px 12px;
    }
 

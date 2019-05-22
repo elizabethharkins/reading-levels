@@ -43,6 +43,7 @@
     </div>
   <script>
 
+
   function levelMe(){
 
       const levelAA = 'https://bobbooks.com/';
@@ -81,6 +82,17 @@
     }
 
   document.getElementById('enter').onclick = levelMe;
+
+  // for keyboard accessibility
+
+  document.getElementById("userinput")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("enter").click();
+    }
+});
+
 
   </script>
 

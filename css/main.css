@@ -122,7 +122,6 @@ textarea {
        display: flex;
        flex-direction: column;
        align-items: center;
-
    }
 
    .container {
@@ -138,6 +137,8 @@ textarea {
        padding: 3em;
    }
 
+   /* ---------- HEADING ---------- */
+
    .container h1 {
        font-size: 2em;
        margin: 20px 0;
@@ -148,6 +149,8 @@ textarea {
        /*font-weight: 300;*/
        width: 66%;
    }
+
+   /* ---------- FORM ---------- */
 
    .submissions {
        display: flex;
@@ -185,6 +188,8 @@ textarea {
        color: purple;
    }
 
+   /* ---------- BUTTON ---------- */
+
    .button-container {
        padding: 20px;
    }
@@ -200,6 +205,8 @@ textarea {
        /*margin: 10px;*/
        padding: 6px 12px;
    }
+
+   /* ---------- CLOSING ---------- */
 
    .disclaimer {
        display: flex;

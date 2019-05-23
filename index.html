@@ -46,6 +46,8 @@
 
   function levelMe(){
 
+      // reading a-z; booklist; raz-kids (?)
+
       const levelAA = 'https://bobbooks.com/';
       const levelA = 'https://bobbooks.com/';
       const levelB = 'https://www.scholastic.com/teachers/teaching-tools/book-lists/guided-reading-level-b-book-list.html?adobe_mc_ref=https%3A%2F%2Fwww.google.com%2F&adobe_mc_sdid=SDID%3D6E3A96864686BE4A-7C4B1C738E7291AA%7CMCORGID%3DAA923BC75245B3F90A490D4D%2540AdobeOrg%7CTS%3D1558126806';
@@ -84,6 +86,7 @@
   document.getElementById('enter').onclick = levelMe;
 
   // for keyboard accessibility
+  // https://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box
 
   document.getElementById("userinput")
     .addEventListener("keyup", function(event) {

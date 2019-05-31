@@ -172,8 +172,9 @@ textarea {
    }
 
    #userinput {
+       border: 1px solid purple;
        border-radius: 8px;
-       border-style: hidden;
+       /*border-style: hidden;*/
        /*border-bottom: 2.5px solid purple;*/
        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
        text-align: center;

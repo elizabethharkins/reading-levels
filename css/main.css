@@ -172,9 +172,9 @@ textarea {
    }
 
    #userinput {
-       border: 1px solid purple;
-       border-radius: 8px;
-       /*border-style: hidden;*/
+       border-radius: 5px;
+       border-style: hidden;
+       border-bottom: 2px solid purple;
        /*border-bottom: 2.5px solid purple;*/
        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
        text-align: center;
@@ -199,8 +199,9 @@ textarea {
        background: #fff;
        border-style: hidden;
        border-bottom: 2.5px solid orange;
-       border-radius: 10px;
+       border-radius: 5px;
        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
+       color: #5D6063
        outline-style: none;
        font-size: 1.1em;
        /*margin: 10px;*/

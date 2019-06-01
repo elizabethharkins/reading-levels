@@ -177,6 +177,7 @@ textarea {
        border-bottom: 2px solid purple;
        /*border-bottom: 2.5px solid purple;*/
        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
+       font-weight: 300;
        text-align: center;
        font-size: 1.5em;
        margin-top: 25px;
@@ -204,6 +205,7 @@ textarea {
        color: #5D6063
        outline-style: none;
        font-size: 1.1em;
+       font-weight: 300;
        /*margin: 10px;*/
        padding: 6px 12px;
    }

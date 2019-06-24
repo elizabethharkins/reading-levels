@@ -1,5 +1,7 @@
 # reading-levels
-A helpful mini-terface, utilizing JS, to direct families to appropriate reading material based on user input. In progress ...
+A helpful mini-terface, utilizing JS, to direct families to appropriate reading material based on user input. Live!
+
+I wanted to explore working with JS and links - and I knew that my classroom community could benefit from having reliable access to information about leveled books for their learners. The result is this little page, also from my Ziggy-induced dev phase. I'm in process with updating it with some of the spiffy neon-gradient features that are flickering around the web.
 
 ![reading-levels-1](https://user-images.githubusercontent.com/44883733/57958798-10fb9f80-78cf-11e9-980d-72112300b61d.png)
 

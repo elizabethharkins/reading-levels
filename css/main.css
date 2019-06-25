@@ -113,7 +113,7 @@ textarea {
 
    html {
       background-color: #d3d3d3;
-      height: 90%;
+      /*height: 90vh;*/
    }
 
    body {
@@ -129,7 +129,7 @@ textarea {
         flex-direction: column;
         align-items: center;
 
-      height: 75%;
+      /*height: 75vh;*/
       padding-top: 25px;
    }
 

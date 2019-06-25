@@ -25,7 +25,7 @@
 
   <!-- Add your site or application content here -->
     <div class="container">
-        <h1>That Reading Level Thing</h1>
+        <h1>That <span>Reading Level Thing</span></h1>
         <p id="tagline">Enter your learner's reading level and say hello to titles
         that will pave the path to success!</p>
       <div class="submissions">
@@ -38,7 +38,7 @@
           </div>
       </div>
       <div class="disclaimer">
-          <p id="note">Remember, a reading level is a guide, not a ruling. Relax + enjoy :)</p>
+          <p id="note">Remember, a reading level is a guide, not a ruling. Relax and enjoy!</p>
       </div>
     </div>
   <script>
@@ -90,10 +90,17 @@
     event.preventDefault();
     if (event.keyCode === 13) {
         document.getElementById("enter").click();
+        document.getElementById("enter").display.outline = 'none';
     }
 });
 
 
+  </script>
+
+  <script>
+  document.getElementbyClassName('button-container').onclick = function(){
+        display.outline = 'none';
+  };
   </script>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

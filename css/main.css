@@ -113,7 +113,7 @@ textarea {
 
    html {
       background-color: #d3d3d3;
-      /*height: 90vh;*/
+      /*height: 50%;*/
    }
 
    body {
@@ -129,7 +129,6 @@ textarea {
         flex-direction: column;
         align-items: center;
 
-      /*height: 75vh;*/
       padding-top: 25px;
    }
 
@@ -144,14 +143,16 @@ textarea {
         align-items: center;
         flex-flow: column wrap;
       text-align: center;
-      margin: 5em;
+      margin: 4em;
       padding: 4em;
+      padding-bottom: 6em;
+      margin-bottom: 100%;
    }
 
    /* ---------- HEADING ---------- */
 
    .container h1 {
-      font-size: 2em;
+      font-size: 2.5em;
       margin: 20px 0;
    }
 
@@ -175,8 +176,8 @@ textarea {
         justify-content: center;
         align-items: center;
         flex-flow: column wrap;
-      margin: 30px;
-      padding: 50px;
+      margin: 50px 8px;
+      padding: 25px 75px;
    }
 
    .formulate {
@@ -187,6 +188,7 @@ textarea {
    }
 
    label {
+      margin-top: 2em;
       font-size: 1em;
    }
 
@@ -202,7 +204,7 @@ textarea {
      
       font-weight: 300;
       text-align: center;
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin: 35px 0 15px 0;
       outline-style: none;
       padding: 6px;
@@ -223,13 +225,16 @@ textarea {
    #enter {
       background-color: #70b2d9;
       background-image: linear-gradient(315deg, #70b2d9 0%, #39e5b6 74%);
-      border: 1px solid #d6d9dc;
+      background-color: inherit;
+      border: 3px solid #d6d9dc;
       border-radius: 20px;
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
-      color: #000;
+      /*color: #000;*/
+      color: #222;
       outline-style: none;
       font-size: 1.1em;
       font-weight: normal;
+      margin-bottom: 2em;
       padding: 6px 30px;
    }
 
@@ -351,11 +356,11 @@ textarea {
      }
 
      .container {
-        margin: 2.5em, 2em, 1em, 1em;
+        margin: 2.5em, 1em, 2em, 1em;
         margin-top: 2.5em;
         /*margin: 5em, 2em, 1em, 1em;*/
-        padding: 2.5em 1.25em;
-        width: 80%;
+        padding: 2.5em 2.25em;
+        width: 85%;
      }
 
      .container h1 {
@@ -370,6 +375,7 @@ textarea {
      }
 
      .submissions {
+        margin: 40px 20px;
         padding: 25px;
      }
 
@@ -377,7 +383,7 @@ textarea {
         font-size: 1em;
         margin-top: 15px;
         padding: 3px;
-        width: 100%;
+        width: 80%;
      }
 
      .button-container {
@@ -385,8 +391,9 @@ textarea {
      }
 
      #enter {
-        font-size: 1em;
-        padding: 4px 8px;
+        font-size: .9em;
+        /*padding: 4px 8px;*/
+        padding: .5em 1.5em;
      }
 
      .disclaimer p {
@@ -397,21 +404,15 @@ textarea {
 
    /* ---------- LARGER ---------- */
 
-   @media only screen and (min-width: 600px) {
-      
-      /*#userinput {
-          width: 66%;
-      }*/
-   }
 
    @media only screen and (min-width: 768px) {
 
-      /*.container {
-          margin-top: 4em;
-       }*/
+      .container h1 {
+          font-size: 3em;
+       }
 
       #userinput {
-          width: 66%;
+          width: 50%;
       }
    }
 
@@ -420,6 +421,14 @@ textarea {
        .container {
           margin-top: 6em;
        }
+
+       .container h1 {
+          font-size: 3em;
+       }
+
+        #userinput {
+          width: 50%;
+      }
    }
 
 
